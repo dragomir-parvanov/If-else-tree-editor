@@ -1,0 +1,56 @@
+var tree_nodes=[
+  {
+    "Id": 0,
+    "Name": "Check for yes or no",
+    "Type": "Question",
+    "Action": "SendMessage",
+    "Data": [
+      "Hello"
+    ],
+    "IsWaitingForNewMessage": false,
+    "IfTrueToNode": 1,
+    "IfFalseToNode": 2,
+    "IfTimeoutToNode": "ToTree=noResponding,node=0",
+    "TimeoutSeconds": 30,
+    "X": 100,
+    "Y": 5,
+    "Height":100,
+    "Width":100
+  },
+  {
+    "Id": 1,
+    "Name": "Do something",
+    "Type": "Action",
+    "Action": "SendMessage",
+    "Data": [
+      "Hello"
+    ],
+    "IsWaitingForNewMessage": false,
+    "IfTrueToNode": 1,
+    "IfFalseToNode": -1,
+    "IfTimeoutToNode": "ToTree=noResponding,node=0",
+    "TimeoutSeconds": 30,
+    "X": 100,
+    "Y": 200,
+    "Height":100,
+    "Width":100
+  },
+  {
+    "Id": 2,
+    "Name": "No",
+    "Type": "Question",
+    "Action": "SendMessage",
+    "Data": [
+      "Hello"
+    ],
+    "IsWaitingForNewMessage": false,
+    "IfTrueToNode": -1,
+    "IfFalseToNode": -1,
+    "IfTimeoutToNode": "ToTree=noResponding,node=0",
+    "TimeoutSeconds": 30,
+    "X": 400,
+    "Y": 5,
+    "Height":100,
+    "Width":100
+  },
+]

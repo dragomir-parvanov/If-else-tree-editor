@@ -1,0 +1,98 @@
+<html>
+
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script type="text/javascript" src="tree_nodes.json"></script>
+<script type="text/javascript" src="test_tree.json"></script>
+<ul class="navbar" id="navbar">
+    <li><a href="#" id="logo">Logo</a></li>
+    <li><a href="#" id="pointer" onclick="pointer()">Pointer</a></li>
+    <li><a href="#" id="addQuestionNode" onclick='addQuestionNodeButton();addNodeType="Question"'>Add question node</a></li>
+    <li><a href="#" id="addActionNode" onclick='addActionNodeButton();addNodeType="Action"'>Add action node</a></li>
+    <li><a href="#" id="removeNode" onclick="removeNodeButton()">Remove node</a></li>
+    <li><a href="#" id="connectTrue" onclick="addConnectionTrue()">Connect tool-true</a></li>
+    <li><a href="#" id="connectFalse" onclick="addConnectionFalse()">Connect tool-false</a></li>
+    <li><a href="#" onclick="zoomIn()">Zoom-in</a></li>
+    <li><a href="#" onclick="zoomOut()">Zoom-out</a></li>
+    <li><a href="#" onclick="downloadJSON()">Download JSON</a></li>
+    <li><a href="#" class="active" href="#help">Help</a></li>
+</ul>
+
+<canvas onmousedown="onCanvasClick(event,0)" onmouseup="onCanvasClick(event,1)" id="SVGTree" class="SVGTree" width=500 height=500 style="border:1px solid #000000;">
+</canvas>
+
+<div id="nodeSettings" class="nodeSettings">
+    <a id="nodeID" class="nodeID"></a>
+    <br>
+    <br>
+    <a id="nodeName" class="nodeName"></a>
+    <input type="text" name="NameInput" id="NameInput" class="NameInput"><br>
+    <br>
+    <a id="nodeCondition" class="nodeCondition"></a>
+    <br>
+    <a class="center">Action:</a>
+    <br>
+    <input type="text" name="ActionInput" id="ActionInput" class="ActionInput"><br>
+    <br>
+    <a class="center">Data:</a>
+    <br>
+    <input type="text" name="DataInput" id="DataInput" class="DataInput"><br>
+    <br>
+    <a>Open statements editor</a>
+    <br>
+    <a class="nodeTimeout" id="nodeTimeout"></a>
+    <br>
+    <a class="center">Notes:</a>
+    <br>
+    <input type="text" name="NotesInput" id="NotesInput" class="NotesInput"><br>
+    <br>
+    <a class="center">If TRUE to node:</a>
+    <br>
+    <a>To tree;<a>
+<input type="text" name="ToTrueTreeInput" id="ToTrueTreeInput" class="ToTreeInput">
+<br>
+<a>To node<a>
+<input type="text" name="ToTrueNodeInput" id="ToTrueNodeInput" class="ToTreeInput">
+<br>
+<a>From node<a>
+<input type="text" name="FromTrueNodeInput" id="FromTrueNodeInput" class="ToTreeInput">
+<br>
+<a class="center">If FALSE to node:</a>
+<br>
+    <a>To tree;<a>
+<input type="text" name="ToFalseTreeInput" id="ToFalseTreeInput" class="ToTreeInput">
+<br>
+<a>To node<a>
+<input type="text" name="ToFalseNodeInput" id="ToFalseNodeInput" class="ToTreeInput">
+<br>
+<a>From node<a>
+<input type="text" name="FromFalseNodeInput" id="FromFalseNodeInput" class="ToTreeInput">
+<br>
+<button type="button" onclick="submit()">Submit</button>
+<button type="button" onclick="makeStartingNode()">Make starting node</button>
+<br>
+<a class="nodeNotes" id="nodeNotes"></a>
+
+
+</div>
+
+<ul class="treeExplorer" id="treeExplorer">
+    <li><a href="#help" onclick="changeTree(0)">Tree1</a></li>
+    <li><a href="#" onclick="changeTree(1)">Tree2</a></li>
+    <li><a class="active" href="#home">New Tree</a></li>
+</ul>
+<script src="responsive.js"></script>
+<script src="start_settings.js"></script>
+<script src="show_node.js"></script>
+<script src="user_input.js"></script>
+<script src="change_tree.js"></script>
+<script src="add_node.js"></script>
+<script src="remove_node.js"></script>
+<script src="tree_id.js"></script>
+<script type="text/javascript" src="tree.js"></script>
+<script src="navbar.js"></script>
+<script src="submit.js"></script>
+<script src="download.js"></script>
+<script src="zoom.js"></script>
+</html>

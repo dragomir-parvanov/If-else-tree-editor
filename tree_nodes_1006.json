@@ -1,0 +1,121 @@
+tree_nodes=[
+   {
+      "Id":1,
+      "Name":"How are you?",
+      "Type":"Action",
+      "Action":"SendMessage",
+      "Data":[
+         "How are you?"
+      ],
+      "IsWaitingForNewMessage":false,
+      "IfTrueToNode":2,
+      "IfFalseToNode":-1,
+      "IfTimeoutToNode":"ToTree=noResponding,node=0",
+      "TimeoutSeconds":30,
+      "X":437.1428571428571,
+      "Y":74.3289224952741,
+      "Height":100,
+      "Width":100,
+      "Notes": "How are you"
+   },
+   {
+      "Id":2,
+      "Name":"Good",
+      "Type":"Question",
+      "Action":"CheckUserLastMessage",
+      "Data":[
+         "iam good",
+         " iam fine"
+      ],
+      "IsWaitingForNewMessage":false,
+      "IfTrueToNode":4,
+      "IfFalseToNode":3,
+      "IfTimeoutToNode":"ToTree=noResponding,node=0",
+      "TimeoutSeconds":30,
+      "X":397.1428571428571,
+      "Y":249.9054820415879,
+      "Height":100,
+      "Width":100,
+      "Notes": "How are you"
+   },
+   {
+      "Id":3,
+      "Name":"Not good",
+      "Type":"Question",
+      "Action":"CheckUserLastMessage",
+      "Data":[
+         "iam not good",
+         " im not feeling great",
+         " im not feeling good"
+      ],
+      "IsWaitingForNewMessage":false,
+      "IfTrueToNode":5,
+      "IfFalseToNode":-1,
+      "IfTimeoutToNode":"ToTree=noResponding,node=0",
+      "TimeoutSeconds":30,
+      "X":682.8571428571429,
+      "Y":249.9054820415879,
+      "Height":100,
+      "Width":100,
+      "Notes": "How are you"
+   },
+   {
+      "Id":4,
+      "Name":"Nice to hear that!",
+      "Type":"Action",
+      "Action":"SendMessage",
+      "Data":[
+         "Nice to hear that"
+      ],
+      "IsWaitingForNewMessage":false,
+      "IfTrueToNode":-1,
+      "IfFalseToNode":-1,
+      "IfTimeoutToNode":"ToTree=noResponding,node=0",
+      "TimeoutSeconds":30,
+      "X":437.1428571428571,
+      "Y":528.5822306238185,
+      "Height":100,
+      "Width":100,
+      "Notes": "How are you"
+
+   },
+   {
+      "Id":5,
+      "Name":"Why?",
+      "Type":"Action",
+      "Action":"SendMessage",
+      "Data":[
+         "Why do you feel like that?"
+      ],
+      "IsWaitingForNewMessage":false,
+      "IfTrueToNode":6,
+      "IfFalseToNode":-1,
+      "IfTimeoutToNode":"ToTree=noResponding,node=0",
+      "TimeoutSeconds":30,
+      "X":726.2857142857142,
+      "Y":522.4574669187145,
+      "Height":100,
+      "Width":100,
+      "Notes": "How are you"
+   },
+   {
+      "Id":6,
+      "Name":"Answer",
+      "Type":"Question",
+      "Action":"CheckUserLastMessage",
+      "Data":[
+         "iam tired",
+         " im ill"
+      ],
+      "IsWaitingForNewMessage":false,
+      "IfTrueToNode":-1,
+      "IfFalseToNode":-1,
+      "IfTimeoutToNode":"ToTree=noResponding,node=0",
+      "TimeoutSeconds":30,
+      "X":936.0685714285714,
+      "Y":490.07788279773155,
+      "Height":100,
+      "Width":100,
+      "Notes": "How are you"
+   }
+]

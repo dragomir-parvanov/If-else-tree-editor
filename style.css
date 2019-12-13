@@ -1,0 +1,88 @@
+body {margin:0;}
+.center{
+text-align: center;
+vertical-align: middle;
+position:absolute;
+right:50%;
+font-size: 19px;
+
+}
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+.SVGTree {
+  position: fixed;
+
+}
+.treeExplorer {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.nodeSettings {
+  background-color: grey;
+  position: fixed;
+}
+.nodeName {
+  position:relative;
+  font-size: 30px;
+  text-align: center;
+  margin:auto;
+
+}
+.nodeCondition{
+  position:relative;
+  font-size: 30px;
+  text-align: center;
+  margin:auto;
+}
+.ActionInput{
+  height: 10%;
+  width: 90%;
+}
+.DataInput{
+  height: 10%;
+  width: 90%;
+}
+.NotesInput{
+  height: 10%;
+  width: 90%;
+}
+.nodeID {
+  position:relative;
+  font-size: 30px;
+  text-align: center;
+  margin:auto;
+
+}

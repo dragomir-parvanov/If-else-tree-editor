@@ -1,0 +1,3 @@
+if(Nodes[i].X-Nodes[i].Width*2<Client.X+Client.Fov.X/2&&Nodes[i].X>Client.X-Client.Fov.X/2){
+//y check
+  if(Nodes[i].Y-Nodes[i].Height<Client.Y+Client.Fov.Y/2&&Nodes[i].Y>Client.Y-Client.Fov.Y/2){

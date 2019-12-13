@@ -1,0 +1,34 @@
+var test_tree =
+  [
+  {
+    "Id": 1,
+    "Tree":  "testTree",
+    "Name": "can i ask you something",
+    "Type": "Action",
+    "Action": "SendMessage",
+    "Data": [
+      "hi bro sorry for interrupting can i ask you something"
+    ],
+    "IsWaitingForNewMessage": false,
+    "IfTrueToNode": {
+      "ToNodeId": -1,
+      "ToTree": "testTree",
+      "FromNode": 1,
+      "FromTree":"testTree"
+    },
+    "IfFalseToNode": {
+      "ToNodeId": -1,
+      "ToTree": "testTree",
+      "FromNode": 1,
+      "FromTree":"testTree"
+    },
+    "IfTimeoutToNode": "ToTree=noResponding,node=0",
+    "TimeoutSeconds": 30,
+    "X": 252.2182340272792,
+    "Y": 64.31567746216155,
+    "Height": 100,
+    "Width": 100,
+    "Notes": "How are you",
+    "IsStartingNode": true
+  }
+]
