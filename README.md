@@ -1,5 +1,7 @@
 This was build around March 2019, uploaded now.
 
+A "tree editor" which can create block-schemes in the browser. Uses HTML5 canvas.
+
 ### DEMO https://ifelsetree.1mb.dev/#
 
 ### USAGE:
