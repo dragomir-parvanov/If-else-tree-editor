@@ -1,37 +1,10 @@
-## Welcome to GitHub Pages
+This was build around March 2019, uploaded now.
 
-You can use the [editor on GitHub](https://github.com/moderexx/If-else-tree-editor/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### DEMO https://ifelsetree.1mb.dev/#
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/moderexx/If-else-tree-editor/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+###USAGE:
+1. Add node from the "Add question node" or "Add action node" and then click on the canvas to add a starting point.
+2. Move around with the arrow keys. You can also zoom in and out with mouse scroll.
+3. Add more nodes and connect them with either Connect tool-false or true.When connect tool is active, click on one node, hold the mouse button and go to the second node to connect them.
+4. You can change trees from the bottom left buttons.
+5. Profit???
