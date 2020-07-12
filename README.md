@@ -3,7 +3,7 @@ This was build around March 2019, uploaded now.
 A "tree editor" which can create block-schemes in the browser. Uses HTML5 canvas.
 
 Most interesting code is in "tree.js" file
-### DEMO https://ifelsetree.1mb.dev/#
+### DEMO https://ifelsetree.1mb.site/
 
 ### USAGE:
 1. Add node from the "Add question node" or "Add action node" and then click on the canvas to add a starting point.
